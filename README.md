@@ -52,7 +52,7 @@ Did I mention it looks fabulous on high-dpi displays?
 - Prevent 140 characters max (will truncate if necessary).
 
 **For Facebook and Google+**
-- data-url, data-text, data-hashtags attributes.
+- data-href attribute.
 
 ## Browser support
 
