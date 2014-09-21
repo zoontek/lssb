@@ -19,14 +19,14 @@ Did I mention it looks fabulous on high-dpi displays?
 ```
 
 2) Link to the js file in your footer.
-*Optionnal. Only required if you use popups*
+*(Optionnal. Only required if you use popups)*
 
 ```html
 <script src="js/lssb.js"></script>
 ```
 
 3) Copy buttons in the lssb wrapper div. Change popup dimensions or remove it if you want. Change URL.
-*You have a full working example in the /example folder*
+*(You have a full working example in the /example folder)*
 
 ```html
 <!-- lssb wrapper div -->
