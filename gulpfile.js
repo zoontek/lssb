@@ -9,11 +9,11 @@ var svgmin = require('gulp-svgmin');
 gulp.task('css', function() {
     return gulp.src('./src/scss/lssb.scss')
         .pipe(sass())
-        .pipe(gulp.dest('./dist/css'))
         .pipe(prefix({
             browsers: ['> 1%', 'last 2 versions', 'Firefox ESR', 'Opera 12.1', 'ie 9'],
             cascade: false
         }))
+        .pipe(gulp.dest('./dist/css'))
         .pipe(shrink())
         .pipe(rename({ suffix: ".min" }))
         .pipe(gulp.dest('./dist/css'));
