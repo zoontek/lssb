@@ -33,14 +33,14 @@
         event.preventDefault();
         popup(
             this.getAttribute('href'),
-            this.querySelector('.text').textContent,
+            this.querySelector('.lssb-text').textContent,
             this.getAttribute('data-height'),
             this.getAttribute('data-width')
         );
     }
 
     document.addEventListener('DOMContentLoaded', function() {
-        var links = document.querySelectorAll('.lssb a.popup');
+        var links = document.querySelectorAll('.lssb-btn.popup');
         var i = 0;
 
         for (; i < links.length; i++) {

@@ -1,119 +1,110 @@
-.lssb {
-    // global style
-    a {
-        box-sizing: border-box;
-        position: relative;
-        display: inline-block;
-        height: 20px;
-        width: auto;
-        outline: none;
-        overflow: hidden;
-        text-decoration: none;
+// global style
+.lssb-btn {
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: auto;
+    outline: none;
+    overflow: hidden;
+    text-decoration: none;
+}
 
-        .icon {
-            position: absolute;
+.lssb-icon {
+    position: absolute;
 
-            svg {
-                display: block;
-            }
-        }
+    svg {
+        display: block;
+    }
+}
 
-        .text {
-            font-smoothing: antialiased;
-        }
+.lssb-text {
+    font-smoothing: antialiased;
+}
+
+// twitter specific
+.lssb-tw {
+    font: 700 11px/1.7 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+    text-shadow: rgba(255, 255, 255, 0.5) 0px 1px 0px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: #eee linear-gradient(#fff, #dedede);
+
+    &:active,
+    &:hover,
+    &:focus {
+        border-color: #bbb;
+        background: #d9d9d9 linear-gradient(#f8f8f8, #d9d9d9);
     }
 
-    // twitter specific
-    .twitter {
-        font: 700 11px/1.7 "Helvetica Neue", Helvetica, Arial, sans-serif;
-        color: #333;
-        text-shadow: rgba(255, 255, 255, 0.5) 0px 1px 0px;
-        border: 1px solid #ccc;
-        border-radius: 3px;
-        background: #eee linear-gradient(#fff, #dedede);
-
-        &:active,
-        &:hover,
-        &:focus {
-            border-color: #bbb;
-            background: #d9d9d9 linear-gradient(#f8f8f8, #d9d9d9);
-        }
-
-        &:active {
-            background: #efefef;
-            box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        &:focus {
-            border-color: #0089cb;
-        }
-
-        .icon {
-            top: 4px;
-            left: 4px;
-            height: 12px;
-            width: 12px;
-        }
-
-        .text {
-            padding: 0 3px 0 18px;
-        }
+    &:active {
+        background: #efefef;
+        box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.1);
     }
 
-    // facebook specific
-    .facebook {
-        font: 700 11px/1.82 "Helvetica Neue", Helvetica, Arial, sans-serif;
-        color: #fff;
-        text-shadow: 0 -1px 0 #354c8c;
-        border: none;
-        border-radius: 2px;
-        background: #4c69ba linear-gradient(#4c69ba, #3b55a0);
+    &:focus {
+        border-color: #0089cb;
+    }
+}
 
-        &:active,
-        &:hover {
-            background: #5b7bd5 linear-gradient(#5b7bd5, #4864b1);
-            box-shadow: inset 0 0 1px #607fd6;
-        }
+// facebook specific
+.lssb-fb {
+    font: 700 11px/1.82 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    text-shadow: 0 -1px 0 #354c8c;
+    border: none;
+    border-radius: 2px;
+    background: #4c69ba linear-gradient(#4c69ba, #3b55a0);
 
-        .icon {
-            top: 4px;
-            left: 4px;
-            height: 12px;
-            width: 12px;
-        }
+    &:active,
+    &:hover {
+        background: #5b7bd5 linear-gradient(#5b7bd5, #4864b1);
+        box-shadow: inset 0 0 1px #607fd6;
+    }
+}
 
-        .text {
-            padding: 0 5px 0 20px;
-        }
+// google+ specific
+.lssb-gp {
+    font: 700 10px/1.8 Roboto, Arial, sans-serif;
+    color: #262626;
+    border: 1px solid rgba(0, 0, 0, .17);
+    border-radius: 2px;
+    background: #fff;
+    transition: background-color .2s, border-color .2s;
+
+    &:active,
+    &:hover {
+        border: 1px solid rgba(0, 0, 0, .25);
     }
 
-    // google+ specific
-    .google {
-        font: 700 10px/1.8 Roboto, Arial, sans-serif;
-        color: #262626;
-        border: 1px solid rgba(0, 0, 0, .17);
-        border-radius: 2px;
-        background: #fff;
-        transition: background-color .2s, border-color .2s;
-
-        &:active,
-        &:hover {
-            border: 1px solid rgba(0, 0, 0, .25);
-        }
-
-        &:active {
-            background: #e5e5e5;
-        }
-
-        .icon {
-            top: 2px;
-            left: 2px;
-            height: 14px;
-            width: 14px;
-        }
-
-        .text {
-            padding: 0 5px 0 22px;
-        }
+    &:active {
+        background: #e5e5e5;
     }
+}
+
+// icon position
+.lssb-tw-icon,
+.lssb-fb-icon {
+    top: 4px;
+    left: 4px;
+    height: 12px;
+    width: 12px;
+}
+.lssb-gp-icon {
+    top: 2px;
+    left: 2px;
+    height: 14px;
+    width: 14px;
+}
+
+// text position
+.lssb-tw-text {
+    padding: 0 3px 0 18px;
+}
+.lssb-fb-text {
+    padding: 0 5px 0 20px;
+}
+.lssb-gp-text {
+    padding: 0 5px 0 22px;
 }

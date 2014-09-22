@@ -29,18 +29,18 @@ Did I mention it looks fabulous on high-dpi displays?
 *(You have a full working example in the /example folder)*
 
 ```html
-<!-- lssb wrapper div -->
-<div class="lssb">
+<!-- optionnal wrapper -->
+<div>
     <!-- facebook button -->
-    <a class="facebook popup" data-height="340" data-width="670" href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/zoontek/lssb">
-        <span class="icon">
+    <a class="lssb-btn lssb-fb popup" data-height="340" data-width="670" href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/zoontek/lssb">
+        <span class="lssb-icon lssb-fb-icon">
             <!-- facebook.svg content -->
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" enable-background="new 0 0 12 12">
                 <path fill="#fff" d="M11 0H1C.4 0 0 .4 0 1v10c0 .6.4 1 1 1h5V8H4V6h2V4.3c0-.7.2-1.3.6-1.7.4-.4 1-.6 1.7-.6.4 0 1.2 0 1.7.1V4H9c-.4 0-.6.1-.8.2-.1.2-.2.4-.2.7V6h2v2H8v4h3c.6 0 1-.4 1-1V1c0-.6-.4-1-1-1z"/>
             </svg>
         </span>
         <!-- you can edit the text of a button -->
-        <span class="text">Share</span>
+        <span class="lssb-text lssb-fb-text">Share</span>
     </a>
 </div>
 ```
