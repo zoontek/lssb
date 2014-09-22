@@ -25,7 +25,7 @@ Did I mention it looks fabulous on high-dpi displays?
 <script src="js/lssb.js"></script>
 ```
 
-3) Copy buttons in the lssb wrapper div. Change popup dimensions or remove it if you want. Change URL.
+3) Copy buttons in a lssb wrapper div. Change popup dimensions or remove it if you want. Change URL.
 *(You have a full working example in the /example folder)*
 
 ```html
