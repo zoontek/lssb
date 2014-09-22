@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "http://github.com/npm/npm.git"
+    "url": "https://github.com/zoontek/lssb.git"
   },
   "devDependencies": {
     "gulp": "^3.8.8",
