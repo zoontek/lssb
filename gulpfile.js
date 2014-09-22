@@ -32,6 +32,7 @@ gulp.task('svg', function() {
         .pipe(gulp.dest('./dist/svg'))
         .pipe(svgmin())
         .pipe(rename({ suffix: ".min" }))
+        .pipe(gulp.dest('./dist/svg'))
 });
 
 gulp.task('default', ['css', 'js', 'svg']);
