@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>LSSB by zoontek</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>LSSB</h1>
+        <p>Lightweight social share buttons</p>
+
+        <p class="view"><a href="https://github.com/zoontek/lssb">View the Project on GitHub <small>zoontek/lssb</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/zoontek/lssb/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/zoontek/lssb/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/zoontek/lssb">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p></p>
+
+<p>It's a fact: Social share buttons sucks. They request a shitload of css / js, don't look great on high-dpi display because they use raster images, and I don't say a word about how difficult is it to align them.
+LSSB is heavily inspired by <a href="https://github.com/kni-labs/rrssb">RRSSB</a> (huge thank to them!), but provide official looking buttons, and doesn't have any requirement (because, you know… lightweight buttons that need jQuery… ugh).
+Facebook, Twitter and Google+ are available at this moment.</p>
+
+<h2>
+<a name="demo" class="anchor" href="#demo"><span class="octicon octicon-link"></span></a>Demo</h2>
+
+<div>
+        
+        <a href="https://twitter.com/share">
+            
+                
+                
+            
+            Tweet
+        </a>
+
+        
+        <a href="https://www.facebook.com/sharer/sharer.php">
+            
+                
+                
+            
+            Share
+        </a>
+
+        
+        <a href="https://plus.google.com/share">
+            
+                
+                
+            
+            Share
+        </a>
+    </div>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>1) Link to the css file in your head.</p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"css/lssb.css"</span><span class="nt">&gt;</span>
+</pre></div>
+
+<p>2) Link to the js file in your footer.</p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"js/lssb.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</pre></div>
+
+<p>3) Add buttons, change data-url attributes values.
+<em>(You have a full working example in the /example folder)</em></p>
+
+<div class="highlight highlight-html"><pre><span class="c">&lt;!-- twitter button --&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"lssb-btn lssb-tw"</span> <span class="na">href=</span><span class="s">"https://twitter.com/share"</span> <span class="na">data-url=</span><span class="s">"https://github.com/zoontek/lssb"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"lssb-icon lssb-tw-icon"</span><span class="nt">&gt;</span>
+        <span class="c">&lt;!-- twitter.svg content --&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/2000/svg"</span> <span class="na">viewBox=</span><span class="s">"0 0 12 12"</span> <span class="na">enable-background=</span><span class="s">"new 0 0 12 12"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;g</span> <span class="na">fill=</span><span class="s">"#fff"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"M2.3 7.7c-.1 0-.2-.1-.3-.2h-.6c.2.5.4.9.9 1.2.1.1.2.1.3.2.4-.2.8-.4 1.1-.7-.5 0-.9-.2-1.4-.5zM1.7 4.4c-.3-.2-.6-.5-.8-.9-.1-.3-.2-.5-.2-.7 0 .2-.1.3-.1.5 0 .3.1.6.2.9.2.1.6.2.9.2zM10.8 3.5s-.1 1.3-.3 2-.5 1.2-.9 1.8c-.4.6-.9 1.1-1.4 1.6-.6.5-1.2.8-2 1.1-.8.3-1.6.4-2.5.4-.7 0-1.3-.1-1.9-.3-.4.1-.8.2-1.3.2h-.6c1.1.7 2.4 1.1 3.8 1.1.9 0 1.7-.1 2.5-.4.8-.3 1.4-.6 2-1.1.5-.5 1-1 1.4-1.6.4-.6.7-1.2.9-1.9s.3-1.3.3-2V3.5zM1.6 7.1c-.1-.2-.1-.4-.2-.6h.5c.2 0 .4 0 .7-.1-.6-.1-1.1-.4-1.4-.8-.1-.1-.2-.3-.3-.4-.1 0-.2-.1-.3-.1 0 .6.2 1.1.6 1.6.1.1.3.2.4.4z"</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;/g&gt;</span>
+            <span class="nt">&lt;path</span> <span class="na">fill=</span><span class="s">"#23aae3"</span> <span class="na">d=</span><span class="s">"M10.6 2.2c.5-.3.9-.8 1.1-1.4-.5.3-1 .5-1.6.6C9.6.9 9 .6 8.3.6s-1.3.3-1.7.7-.7 1.1-.7 1.8c0 .2 0 .4.1.6-1-.1-1.9-.4-2.8-.8-.9-.5-1.6-1.1-2.3-1.8-.2.4-.3.8-.3 1.2s.1.8.3 1.2.5.7.8.9c-.4 0-.8-.1-1.1-.3 0 .6.2 1.1.6 1.6.3.3.8.6 1.4.7-.3.1-.5.1-.7.1h-.5c.2.5.4.9.9 1.2.5.3.9.5 1.4.5-.9.7-1.9 1.1-3.1 1.1H0c1.1.7 2.4 1.1 3.8 1.1.9 0 1.7-.1 2.5-.4.8-.3 1.4-.6 2-1.1.5-.5 1-1 1.4-1.6s.7-1.2.9-1.9.3-1.3.3-2v-.3c.5-.4.9-.8 1.2-1.3-.6.2-1 .3-1.5.4z"</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;g</span> <span class="na">fill=</span><span class="s">"#0091c9"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"M6.6 2.3c.4-.4 1-.7 1.7-.7s1.3.3 1.8.8c.4-.1.7-.2.5-.2.5-.3.9-.8 1.1-1.4-.5.3-1 .5-1.6.6C9.6.9 9 .6 8.3.6s-1.3.3-1.7.7c-.4.4-.7 1.1-.7 1.8 0 .2 0 .3.1.5 0-.6.3-1 .6-1.3zM.9 2.1c.7.7 1.4 1.3 2.3 1.8.9.4 1.8.7 2.8.8-.1-.2-.1-.4-.1-.6 0-.1 0-.3.1-.4-1-.1-1.9-.4-2.7-.8-1-.5-1.7-1.1-2.4-1.8-.2.4-.3.8-.3 1.2 0 .2 0 .3.1.5 0-.3.1-.5.2-.7z"</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;/g&gt;</span>
+        <span class="nt">&lt;/svg&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="c">&lt;!-- you can edit the text of a button --&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"lssb-text lssb-tw-text"</span><span class="nt">&gt;</span>Tweet<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/a&gt;</span>
+
+<span class="c">&lt;!-- facebook button --&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"lssb-btn lssb-fb"</span> <span class="na">data-url=</span><span class="s">"https://github.com/zoontek/lssb"</span> <span class="na">href=</span><span class="s">"https://www.facebook.com/sharer/sharer.php"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"lssb-icon lssb-fb-icon"</span><span class="nt">&gt;</span>
+        <span class="c">&lt;!-- facebook.svg content --&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/2000/svg"</span> <span class="na">viewBox=</span><span class="s">"0 0 12 12"</span> <span class="na">enable-background=</span><span class="s">"new 0 0 12 12"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;path</span> <span class="na">fill=</span><span class="s">"#fff"</span> <span class="na">d=</span><span class="s">"M11 0H1C.4 0 0 .4 0 1v10c0 .6.4 1 1 1h5V8H4V6h2V4.3c0-.7.2-1.3.6-1.7.4-.4 1-.6 1.7-.6.4 0 1.2 0 1.7.1V4H9c-.4 0-.6.1-.8.2-.1.2-.2.4-.2.7V6h2v2H8v4h3c.6 0 1-.4 1-1V1c0-.6-.4-1-1-1z"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;/svg&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="c">&lt;!-- you can edit the text of a button --&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"lssb-text lssb-fb-text"</span><span class="nt">&gt;</span>Share<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/a&gt;</span>
+
+<span class="c">&lt;!-- google+ button --&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"lssb-btn lssb-gp"</span> <span class="na">href=</span><span class="s">"https://plus.google.com/share"</span> <span class="na">data-url=</span><span class="s">"https://github.com/zoontek/lssb"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"lssb-icon lssb-gp-icon"</span><span class="nt">&gt;</span>
+        <span class="c">&lt;!-- google.svg content --&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/2000/svg"</span> <span class="na">viewBox=</span><span class="s">"0 0 14 14"</span> <span class="na">enable-background=</span><span class="s">"new 0 0 14 14"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;path</span> <span class="na">fill=</span><span class="s">"#dd4b38"</span> <span class="na">d=</span><span class="s">"M7.2 8l-.6-.6c-.2-.1-.5-.3-.5-.7 0-.4.3-.7.5-.9.8-.6 1.5-1.3 1.5-2.6S7.5 1.3 7.2 1h.9L9 0H5.4c-1 0-2.2.1-3.3 1C1.3 1.7.9 2.6.9 3.5c0 1.4 1.1 2.9 3 2.9h.6c0 .1-.1.3-.1.6 0 .6 0 .8.3 1.1-.9.1-2.2.2-3.3.9C.3 9.6 0 10.7 0 11.4 0 12.7 1.3 14 3.9 14c3.2 0 4.8-1.7 4.8-3.5C8.8 9.3 8 8.6 7.2 8zM2.5 2.6c0-.5.1-1 .4-1.4.3-.4.8-.6 1.3-.6C5.7.6 6.5 2.7 6.5 4c0 .3 0 .9-.5 1.3-.2.3-.7.5-1.2.5-1.6 0-2.3-2-2.3-3.2zm2.3 10.6c-2 0-3.2-.9-3.2-2.2s1.1-1.7 1.5-1.8c.8-.3 1.8-.3 1.8-.3h.7c1.1.5 2 1.5 2 2.4-.1 1.1-1 1.9-2.8 1.9zM14 6h-2V4h-1v2H9v1h2v2h1V7h2z"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;/svg&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="c">&lt;!-- you can edit the text of a button --&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"lssb-text lssb-gp-text"</span><span class="nt">&gt;</span>Share<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/a&gt;</span>
+</pre></div>
+
+<h2>
+<a name="optionnal-attributes" class="anchor" href="#optionnal-attributes"><span class="octicon octicon-link"></span></a>Optionnal attributes</h2>
+
+<p><code>data-url</code>
+Shared URL.
+Default: active window URL</p>
+
+<p><code>data-height</code>
+Height of the popup.
+Default: 410</p>
+
+<p><code>data-width</code>
+Width of the popup.
+Default: 580</p>
+
+<h3>
+<a name="for-twitter-only" class="anchor" href="#for-twitter-only"><span class="octicon octicon-link"></span></a>For Twitter only</h3>
+
+<p><code>data-hashtags</code>
+Hashtags, separated by a comma.</p>
+
+<p><code>data-via</code>
+via @account.</p>
+
+<p><code>data-related</code>
+Related accounts, separated by a comma.</p>
+
+<h2>
+<a name="browser-support" class="anchor" href="#browser-support"><span class="octicon octicon-link"></span></a>Browser support</h2>
+
+<p>IE9+, I guess.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/zoontek">zoontek</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
