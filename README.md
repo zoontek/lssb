@@ -28,6 +28,7 @@ Did I mention it looks fabulous on high-dpi displays?
 *(You have a full working example in the /example folder)*
 
 ```html
+<!-- twitter button -->
 <a class="lssb-btn lssb-tw" href="https://twitter.com/share" data-url="https://github.com/zoontek/lssb">
     <span class="lssb-icon lssb-tw-icon">
         <!-- twitter.svg content -->
