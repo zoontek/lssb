@@ -73,31 +73,27 @@ Did I mention it looks fabulous on high-dpi displays?
 
 ## Optionnal attributes
 
-**data-url**
-Shared URL
+`data-url`
+Shared URL.
 Default: active window URL
 
-**data-height**
+`data-height`
 Height of the popup.
 Default: 410
 
-**data-width**
+`data-width`
 Width of the popup.
 Default: 580
 
-**data-url**
-Shared URL
-Default: active window URL
+### For Twitter only
 
-###For Twitter only
-
-**data-hashtags**
+`data-hashtags`
 Hashtags, separated by a comma.
 
-**data-via**
+`data-via`
 via @account.
 
-**data-related**
+`data-related`
 Related accounts, separated by a comma.
 
 ## Browser support
