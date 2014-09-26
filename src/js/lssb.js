@@ -1,8 +1,7 @@
 !function() {
     // common pointers
     var w = window,
-        d = document,
-        s = screen;
+        d = document;
 
     function click(e) {
         e.preventDefault();

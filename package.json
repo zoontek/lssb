@@ -1,6 +1,6 @@
 {
   "name": "lssb",
-  "version": "1.0.0-dev",
+  "version": "1.0.0",
   "description": "Lightweight social share buttons",
   "author": "Acthernoene Mathieu <zoontek@gmail.com>",
   "license": "MIT",

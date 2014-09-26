@@ -1,6 +1,6 @@
 {
   "name": "lssb",
-  "version": "1.0.0-dev",
+  "version": "1.0.0",
   "authors": [
     "Acthernoene Mathieu <zoontek@gmail.com>"
   ],
@@ -13,6 +13,5 @@
     "twitter",
     "google"
   ],
-  "license": "MIT",
-  "private": true
+  "license": "MIT"
 }
