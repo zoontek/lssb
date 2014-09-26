@@ -75,7 +75,7 @@ Did I mention it looks fabulous on high-dpi displays?
 
 `data-url`
 Shared URL.
-Default: Window URL
+Default: Page URL
 
 `data-height`
 Height of the popup.
@@ -86,6 +86,10 @@ Width of the popup.
 Default: 580
 
 ### For Twitter only
+
+`data-text`
+Tweet text.
+Default: Page title
 
 `data-hashtags`
 Hashtags, separated by a comma.
