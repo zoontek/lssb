@@ -1,5 +1,7 @@
 ## LSSB (Lightweight social share buttons)
 
+[Demo is available on the Github page.](http://zoontek.github.io/lssb/) 
+
 ![](https://dl.dropboxusercontent.com/u/4181800/lssb.png)
 
 It's a fact: Social share buttons sucks. They request a shitload of css / js, use raster images, and I don't say a word about how difficult is it to align them.
