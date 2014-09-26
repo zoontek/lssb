@@ -75,7 +75,7 @@ Did I mention it looks fabulous on high-dpi displays?
 
 `data-url`
 Shared URL.
-Default: active window URL
+Default: Window URL
 
 `data-height`
 Height of the popup.
@@ -98,4 +98,4 @@ Related accounts, separated by a comma.
 
 ## Browser support
 
-IE9+, I guess.
+IE9+
