@@ -2,15 +2,11 @@
 
 [Demo is available on the Github page.](http://zoontek.github.io/lssb/) 
 
-![](https://dl.dropboxusercontent.com/u/4181800/lssb.png)
-
 It's a fact: Social share buttons sucks. They request a shitload of css / js, use raster images, and I don't say a word about how difficult is it to align them.
 LSSB is heavily inspired by [RRSSB](https://github.com/kni-labs/rrssb) (huge thank to them!), but provide official looking buttons, and doesn't have any requirement (because, you know… lightweight buttons that need jQuery… ugh).
 Facebook, Twitter and Google+ are available at this moment.
 
 Did I mention it looks fabulous on high-dpi displays?
-
-![](https://dl.dropboxusercontent.com/u/4181800/lssb_retina.png)
 
 ## Usage
 
